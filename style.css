@@ -1,0 +1,154 @@
+/*
+Theme Name: Rocotillo
+Version: English
+*/
+
+/*
+font-family:'AmericanTypwrterITCW01- 731010'; font-weight: normal; 	Bold
+font-family:'AmericanTypwrterITCW01- 731013';	Bold Italic
+font-family:'AmericanTypwrterITCW01- 731016';	Condensed Bold
+font-family:'AmericanTypwrterITCW01- 731019';	Condensed Light
+font-family:'AmericanTypwrterITCW01- 731022';	Condensed
+font-family:'AmericanTypwrterITCW01- 731025';	Light
+font-family:'AmericanTypwrterITCW01- 731028';	Light Italic
+font-family:'AmericanTypwrterITCW01- 731031';	Medium
+font-family:'AmericanTypwrterITCW01- 731034';	Medium Italic
+
+*/
+
+
+body {background: url(images/texture.jpg) #F0EDE5; background-size: 1024px 512px; color: #333; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.4; padding: 0; margin: 0;}
+
+a {color: #F15A24; text-decoration: none; }
+a:hover {color: #C4491D; }
+	
+h1 {margin: 10px .5em 0 0; float: left; font-size:24px; background: url(images/rocotillo.svg) no-repeat right center; padding: 12px 36px 0 0; font-family:'AmericanTypwrterITCW01- 731010'; font-weight: normal;}
+.legacy h1 {background: url(images/rocotillo.png) no-repeat right center;}
+h1 a:hover {color: #F15A24;}
+h2 {margin: 0; font-size: 42px; color: rgba(0,0,0,0.5); line-height: 1.3; font-weight: normal; font-family:'AmericanTypwrterITCW01- 731031'; clear: both}
+h2 span {font-size: 28px; display: block;}
+
+/* Header */
+
+.header {background: white; box-shadow: 0 1px 7px rgba(0,0,0,0.2); }
+.header .margin {width: 1000px; margin: 0 auto; padding: 0 20px; overflow: hidden; background: white;}
+
+.tagline {float: left; color: #807E7A; font-size: 21px; margin: 10px 0; padding-top: 15px; font-family:'AmericanTypwrterITCW01- 731031';}
+
+.social {margin: 0; padding: 0; list-style: none; float: right;}
+.social li {display: block; float: left; background: #F0EDE5; border-radius: 20px; margin: 1em .5em;}
+.social li a {display: block; width: 40px; height: 40px}
+.social li span {display: none;}
+.social .tinyletter a {background: url(images/tinyletter.png) no-repeat center; background-size: 21px 26px;}
+.social .facebook a {background: url(images/facebook.svg);}
+.social .twitter a {background: url(images/twitter.svg);}
+.social .pinterest a {background: url(images/pinterest.svg);}
+
+.legacy .social .tinyletter a {background: url(images/tinyletter-legacy.png) no-repeat center; background-size: 21px 26px;}
+.legacy .social .facebook a {background: url(images/facebook.png);}
+.legacy .social .twitter a {background: url(images/twitter.png);}
+.legacy .social .pinterest a {background: url(images/pinterest.png);}
+
+
+/* Content */
+
+.content .margin {width: 1000px; margin: 0 auto; padding: 0 20px 0 20px}
+
+.languages {float: right; margin: 0; padding: 0; list-style: none;}
+.languages li {display: block; float: left; padding: 1em;  border-bottom-right-radius: 6px;
+border-bottom-left-radius: 6px;}
+.languages .selected {
+	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(50%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,0) 100%); /* IE10+ */
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 50%,rgba(255,255,255,0) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+}
+
+.itemwrapper:before, .itemwrapper:after { content:""; display:table; clear:both; }
+
+.itemwrapper {clear: both; padding: 1.5em 0; }
+
+.listingitem .thumbbox  {float: left; }
+.listingitem .thumbbox a { background: #fff; padding: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.2); display: block}
+.listingitem .thumbbox a img {background: #F0EDE5; width: 300px; height: 200px; }
+.listingitem .textbox {float: left; width: 650px; margin-left: 30px; padding-top: 30px;}
+
+.quickitem { border-left: 1px dotted #F15A24; border-right: 1px dotted #F15A24; padding: 0 30px}
+.quickitem:before, .quickitem:after { content:""; display:table; clear:both; }
+
+.quickitem .thumbbox  {float: right; }
+.quickitem .thumbbox a { background: #fff; padding: 7px; box-shadow: 0 2px 10px rgba(0,0,0,0.2); display: block}
+.quickitem .thumbbox a img {background: #F0EDE5; width: 179px; }
+.quickitem .textbox {float: left; width: 710px; }
+.quickitem .textbox h6 {font-size: 14px; font-weight: bold; margin: 0; color: rgba(0,0,0,0.5); text-transform: uppercase; padding-top: 15px;}
+.quickitem .textbox p {margin: 0; padding: .5em 1.5em .5em 0;}
+	
+.meta { }
+.meta p {float: left; background: url(images/slash.svg) no-repeat right center; padding: 1.5em 1.5em 1.5em 0; margin: 0;}
+.legacy .meta p {float: left; background: url(images/slash.png) no-repeat right center; }
+.meta p.last {background: none; padding-left: .5em;}
+
+.imagebox { margin: 1em 0; zoom:1; /* For IE 6/7 (trigger hasLayout) */ }
+.imagebox:before, .imagebox:after { content:""; display:table; clear:both; }
+.imagebox .image { background: #fff; padding: 15px; box-shadow: 0 1px 7px rgba(0,0,0,0.2); float: left; }
+.imagebox .image img {background: #F0EDE5; width: 770px; }
+.imagebox .caption {width: 170px; float: right; font-size: 18px; color: #807E7A; font-family:'AmericanTypwrterITCW01- 731031';}
+.imagebox .caption.long {font-size: 14px;}
+.imagebox .caption span { display: block; }
+.imagebox .columnimage { background: #fff; padding: 15px; box-shadow: 0 1px 7px rgba(0,0,0,0.2); width: 570px; margin-left: 200px; float: left; }
+.imagebox .columnimage img {background: #999; width: 570px; }
+.imagebox iframe {margin-top: .5em; clear: both; display: block;}
+
+.sketchbox { clear: both; margin: 1em 0; zoom:1; /* For IE 6/7 (trigger hasLayout) */ }
+.sketchbox .image { background: #fff; padding: 15px; box-shadow: 0 1px 7px rgba(0,0,0,0.2); float: left; }
+.sketchbox .image img {background: #F0EDE5; width: 970px; }
+.sketchbox span { display: block;  float: right; padding-top: 1em}
+
+.sketchpost {width: 600px; margin-left: 200px; padding-top: 1em; clear: both; }
+.sketchpost h2 { font-size: 36px; }
+.sketchpost h2 span {font-size: 24px;}
+
+.quote {background: url(images/ldquo.svg) no-repeat left 6px; clear: both; font-size: 36px; width: 800px; color: #807E7A; line-height: 1.2; margin: .5em 0 .6em 0; overflow: hidden; font-family:'AmericanTypwrterITCW01- 731031';}
+.legacy .quote {background: url(images/ldquo.png) no-repeat left 6px; }
+.quote p {margin: 0 0 0 35px; padding-bottom: .5em; border-bottom: 1px dotted #F15A24;}	
+.quote .rdquo {background: url(images/rdquo.svg) no-repeat right bottom; padding-right: 35px; }
+.legacy .quote .rdquo {background: url(images/rdquo.png) no-repeat right bottom; }
+	
+.copy {width: 600px; margin-left: 200px; }
+.copy a {font-weight: 500;}
+
+.recipe {background: #fff; padding: 1.5em 30px 1em 30px; box-shadow: 0 1px 7px rgba(0,0,0,0.2); border-radius: 18px; overflow: hidden; margin: 2em 0 2em 170px; width: 600px;}
+.recipe h3 {font-weight: normal; color: #F15A24; font-size: 36px; margin: 0;font-family:'AmericanTypwrterITCW01- 731031';}
+.recipe ul {margin-left: 0; padding-left: 0; list-style: none; }
+	
+.authorbox { border-top: 1px dotted #F15A24; width: 600px; margin-left: 200px; margin-top: 2em; clear: both; overflow: hidden;}
+.authorbox strong { font-family:'AmericanTypwrterITCW01- 731010'; font-weight: normal; font-weight: normal;}
+.authorbox img {float: left; margin: 1em 1em 1em 0; width: 100px;}
+.authorbox a.credit {display:block; font-size: .7em; font-family:'AmericanTypwrterITCW01- 731031'; margin-bottom: 1em;}
+.authorbox + .authorbox {margin-top: 0;}
+		
+.twitterbox {border: 1px solid #F1B6A1; border-radius: 6px; width: 600px; margin: 1em 0 2em 200px; box-shadow: 0 1px 5px rgba(0,0,0,0.1); color: #C4491D;
+	background: #f1edec;
+	background: -moz-linear-gradient(top, #f1edec 0%, #f1d7cd 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f1edec), color-stop(100%,#f1d7cd));
+	background: -webkit-linear-gradient(top, #f1edec 0%,#f1d7cd 100%);
+	background: -o-linear-gradient(top, #f1edec 0%,#f1d7cd 100%);
+	background: -ms-linear-gradient(top, #f1edec 0%,#f1d7cd 100%);
+	background: linear-gradient(to bottom, #f1edec 0%,#f1d7cd 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1edec', endColorstr='#f1d7cd',GradientType=0 );
+	}
+.twitterbox h4 {font-weight: normal; border-bottom: 1px solid #F1B6A1; padding: 12px 16px; margin: 0; font-size: 16px; background: url(images/twitterbox.svg) no-repeat 560px center;}
+.legacy .twitterbox h4 {background: url(images/twitterbox.png) no-repeat 560px center;}
+.twitterbox a { color: #C4491D;}
+.twitterbox a:hover {color: #F15A24;}
+.twitterbox p { padding: 12px 16px; margin:0; font-size: 14px;}
+
+/* Footer */
+
+.footer {text-align: center; padding: 5em 0 2em 0; color: rgba(0,0,0,0.5); font-size: 18px; font-family:'AmericanTypwrterITCW01- 731031';}
+.footer .logo {margin: 0; font-size:24px; background: url(images/rocotillo.svg) no-repeat right center; padding: 12px 1.5em 0 0; display: inline-block; font-family:'AmericanTypwrterITCW01- 731010'; font-weight: normal;}
+.legacy .footer .logo {background: url(images/rocotillo.png) no-repeat right center; }
+.footer .mediatemple {font-size: .7em; margin: 4em 0 0 0;}
