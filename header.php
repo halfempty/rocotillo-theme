@@ -48,12 +48,12 @@
 <div class="header">
 	<div class="margin">
 		<h1><a href="/en/">Rocotillo</a></h2>
-		<p class="tagline">Connect through food</p>
+		<p class="tagline"><?php echo get_bloginfo('description'); ?></p>
 
 		<ul class="social">
-		<li class="tinyletter"><a href="http://tinyletter.com/rocotillo" title="Subscribe to our TinyLetter"><span>TinyLetter</span></a></li>
-		<li class="twitter"><a href="http://twitter.com/rocorecipes" title="Follow us on Twitter"><span>Twitter</span></a></li>
-		<li class="pinterest"><a href="http://pinterest.com/rocorecipes/" title="Follow us on Pinterest"><span>Pinterest</span></a></li>
+		<li class="tinyletter"><a href="http://tinyletter.com/rocotillo" title="<?php echo get_template_part('parts/lang/subscribe-tinyletter'); ?>"><span>TinyLetter</span></a></li>
+		<li class="twitter"><a href="http://twitter.com/rocorecipes" title="<?php echo get_template_part('parts/lang/subscribe-twitter'); ?>"><span>Twitter</span></a></li>
+		<li class="pinterest"><a href="http://pinterest.com/rocorecipes/" title="<?php echo get_template_part('parts/lang/subscribe-pinterest'); ?>"><span>Pinterest</span></a></li>
 		</ul>
 	</div>
 </div>

@@ -12,8 +12,8 @@ get_header(); ?>
 				<?php $rocotillo = get_post_meta($post->ID,'_rocotillo',TRUE); ?>
 
 				<ul class="languages">
-					<li class="selected"><a href="<?php the_permalink(); ?>">english</a></li>
-					<li><a href="<?php echo $rocotillo['spanish']; ?>">español</a></li>
+					<li class="<?php echo get_template_part('parts/lang/english-class'); ?>"><a href="<?php echo $rocotillo['english']; ?>">english</a></li>
+					<li class="<?php echo get_template_part('parts/lang/spanish-class'); ?>"><a href="<?php echo $rocotillo['spanish']; ?>">español</a></li>
 				</ul>
 
 				<h2><a href="<?php the_permalink(); ?>"><?php echo $rocotillo['headline']; ?></a> <span><?php echo $rocotillo['subhead']; ?></span></h2> 

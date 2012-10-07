@@ -1,9 +1,9 @@
 <?php get_header(); ?>
 
-<ul class="languages">
-	<li class="selected"><a href="http://blog.rocotillo.com/en/">english</a></li>
-	<li><a href="http://blog.rocotillo.com/es/">español</a></li>
-</ul>
+	<ul class="languages">
+		<li class="<?php echo get_template_part('parts/lang/english-class'); ?>"><a href="http://blog.rocotillo.com/en/">english</a></li>
+		<li class="<?php echo get_template_part('parts/lang/spanish-class'); ?>"><a href="http://blog.rocotillo.com/es/">español</a></li>
+	</ul>
 	
 		<?php if (have_posts()) : ?>
 
@@ -18,7 +18,7 @@
 								</div>
 
 								<div class="textbox">
-									<h6>Quick Bite</h6>
+									<h6><?php echo get_template_part('parts/lang/quickbite'); ?></h6>
 									<h2><a href="<?php the_permalink(); ?>"><?php echo $rocotillo['headline']; ?></a></h2> 
 
 								<div class="meta">
