@@ -47,7 +47,7 @@
 
 <div class="header">
 	<div class="margin">
-		<h1><a href="/en/">Rocotillo</a></h2>
+		<h1><a href="<?php echo home_url(); ?>">Rocotillo</a></h2>
 		<p class="tagline"><?php echo get_bloginfo('description'); ?></p>
 
 		<ul class="social">
