@@ -98,6 +98,7 @@ border-bottom-left-radius: 6px;}
 .imagebox .caption {width: 170px; float: right; font-size: 18px; color: #807E7A; font-family:'AmericanTypwrterITCW01- 731031';}
 .imagebox .caption.long {font-size: 14px;}
 .imagebox .caption span { display: block; }
+.imagebox .caption a { display: block !important; margin-top: .5em !important;}
 .imagebox .columnimage { background: #fff; padding: 15px; box-shadow: 0 1px 7px rgba(0,0,0,0.2); width: 570px; margin-left: 200px; float: left; }
 .imagebox .columnimage img {background: #999; width: 570px; }
 .imagebox iframe {margin-top: .5em; clear: both; display: block;}
