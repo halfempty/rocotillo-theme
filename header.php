@@ -38,8 +38,14 @@
 		<li class="twitter"><a href="http://twitter.com/rocorecipes" title="<?php echo get_template_part('parts/lang/subscribe-twitter'); ?>"><span>Twitter</span></a></li>
 		<li class="pinterest"><a href="http://pinterest.com/rocorecipes/" title="<?php echo get_template_part('parts/lang/subscribe-pinterest'); ?>"><span>Pinterest</span></a></li>
 		</ul>
+
+		<?php wp_nav_menu( array( 'theme_location' => 'top-navigation' ) ); ?>
+
+
 	</div>
 </div>
 
 <div class="content">
 	<div class="margin">
+		
+		

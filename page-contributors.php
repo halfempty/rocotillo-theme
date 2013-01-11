@@ -11,7 +11,7 @@ get_header(); ?>
 		<li class="<?php get_template_part('parts/lang/spanish-class'); ?>"><a href="http://blog.rocotillo.com/es/contribuyentes">español</a></li>
 	</ul>
 		
-	<h2><?php echo get_template_part('parts/lang/contributors'); ?></h2>
+	<h2><?php the_title(); ?></h2>
 	
 	<?php
 	
