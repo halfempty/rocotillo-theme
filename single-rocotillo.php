@@ -11,6 +11,8 @@ get_header(); ?>
 
 				<?php $rocotillo = get_post_meta($post->ID,'_rocotillo',TRUE); ?>
 
+				<div class="single">
+
 				<ul class="languages">
 					<li class="<?php echo get_template_part('parts/lang/english-class'); ?>"><a href="<?php echo $rocotillo['english']; ?>">english</a></li>
 					<li class="<?php echo get_template_part('parts/lang/spanish-class'); ?>"><a href="<?php echo $rocotillo['spanish']; ?>">español</a></li>
@@ -26,6 +28,8 @@ get_header(); ?>
 				<?php the_content(); ?>
 
 				<?php get_template_part('parts/twitterbox') ?>
+
+				</div>
 
 			<?php endwhile; ?>
 
