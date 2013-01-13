@@ -1,9 +1,4 @@
 <?php get_header(); ?>
-
-	<ul class="languages">
-		<li class="<?php echo get_template_part('parts/lang/english-class'); ?>"><a href="http://blog.rocotillo.com/en/">english</a></li>
-		<li class="<?php echo get_template_part('parts/lang/spanish-class'); ?>"><a href="http://blog.rocotillo.com/es/">español</a></li>
-	</ul>
 	
 		<?php if (have_posts()) : ?>
 

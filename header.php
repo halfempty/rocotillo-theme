@@ -33,14 +33,25 @@
 		<h1><a href="<?php echo home_url(); ?>">Rocotillo</a></h2>
 		<p class="tagline"><?php echo get_bloginfo('description'); ?></p>
 
-		<ul class="social">
-		<li class="tinyletter"><a href="http://tinyletter.com/rocotillo" title="<?php echo get_template_part('parts/lang/subscribe-tinyletter'); ?>"><span>TinyLetter</span></a></li>
-		<li class="twitter"><a href="http://twitter.com/rocorecipes" title="<?php echo get_template_part('parts/lang/subscribe-twitter'); ?>"><span>Twitter</span></a></li>
-		<li class="pinterest"><a href="http://pinterest.com/rocorecipes/" title="<?php echo get_template_part('parts/lang/subscribe-pinterest'); ?>"><span>Pinterest</span></a></li>
+		<ul class="languages">
+		<?php
+			global $wp_query;
+			$postid = $wp_query->post->ID;
+			$rocotillohead = get_post_meta($postid,'_rocotillo',TRUE);
+		?>
+		<?php if ( $rocotillo['english'] !== '' ) : ?>
+			<li class="<?php echo get_template_part('parts/lang/english-class'); ?>"><a href="<?php echo $rocotillohead['english']; ?>">english</a></li>
+		<?php else: ?>
+			<li class="<?php echo get_template_part('parts/lang/english-class'); ?>"><a href="http://blog.rocotillo.com/en/">english</a></li>
+		<?php endif; ?>
+
+		<?php if ( $rocotillo['spanish'] !== '' ) : ?>
+			<li class="<?php echo get_template_part('parts/lang/spanish-class'); ?>"><a href="<?php echo $rocotillohead['spanish']; ?>">español</a></li>
+		<?php else: ?>
+			<li class="<?php echo get_template_part('parts/lang/spanish-class'); ?>"><a href="http://blog.rocotillo.com/es/">español</a></li>
+		<?php endif; ?>
+	
 		</ul>
-
-		<?php wp_nav_menu( array( 'theme_location' => 'top-navigation' ) ); ?>
-
 
 	</div>
 </div>
@@ -48,4 +59,7 @@
 <div class="content">
 	<div class="margin">
 		
-		
+		<div class="subnav">
+			<?php echo get_template_part('parts/lang/social'); ?>		
+			<?php wp_nav_menu( array( 'theme_location' => 'top-navigation' ) ); ?>
+		</div>

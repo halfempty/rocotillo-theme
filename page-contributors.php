@@ -5,11 +5,6 @@
 get_header(); ?>
 
 	<div class="contributors">
-
-	<ul class="languages">
-		<li class="<?php get_template_part('parts/lang/english-class'); ?>"><a href="http://blog.rocotillo.com/en/contributors">english</a></li>
-		<li class="<?php get_template_part('parts/lang/spanish-class'); ?>"><a href="http://blog.rocotillo.com/es/contribuyentes">español</a></li>
-	</ul>
 		
 	<h2><?php the_title(); ?></h2>
 	
