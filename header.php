@@ -56,10 +56,12 @@
 	</div>
 </div>
 
+<div class="subnav">
+	<div class="margin">
+	<?php echo get_template_part('parts/lang/social'); ?>		
+	<?php wp_nav_menu( array( 'theme_location' => 'top-navigation' ) ); ?>
+	</div>
+</div>
+
 <div class="content">
 	<div class="margin">
-		
-		<div class="subnav">
-			<?php echo get_template_part('parts/lang/social'); ?>		
-			<?php wp_nav_menu( array( 'theme_location' => 'top-navigation' ) ); ?>
-		</div>

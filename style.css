@@ -27,28 +27,40 @@ a {color: #F15A24; text-decoration: none;
 	}
 a:hover {color: #C4491D; }
 	
-h1 {margin: 10px .5em 0 0; float: left; font-size:24px; background: url(images/rocotillo.svg) no-repeat right center; padding: 12px 36px 0 0; font-family:'AmericanTypwrterITCW01- 731010'; font-weight: normal;}
-.legacy h1 {background: url(images/rocotillo.png) no-repeat right center;}
-h1 a:hover {color: #F15A24;}
+h1 {margin: .25em; float: left; font-size:24px; background: url(images/rocotillo-light.svg) no-repeat right center; padding: 12px 36px 0 0; font-family:'AmericanTypwrterITCW01- 731010'; font-weight: normal;}
+.legacy h1 {background: url(images/rocotillo-light.png) no-repeat right center;}
+h1 a, h1 a:hover {color: #F0EDE5;}
 h2 {margin: 0; font-size: 42px; color: rgba(0,0,0,0.5); line-height: 1.3; font-weight: normal; font-family:'AmericanTypwrterITCW01- 731031'; clear: both}
-h2 span {font-size: 28px; display: block;}
+h2 span {font-size: 28px; display: block;;}
 
 /* Header */
 
-.header {background: white; box-shadow: 0 1px 7px rgba(0,0,0,0.2); }
-.header .margin {width: 1000px; margin: 0 auto; padding: 0 20px; overflow: hidden; background: white;}
+.header, .header .margin {
+	background: #f15a24;
+	background: -moz-linear-gradient(top, #f15a24 0%, #d85120 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f15a24), color-stop(100%,#d85120));
+	background: -webkit-linear-gradient(top, #f15a24 0%,#d85120 100%);
+	background: -o-linear-gradient(top, #f15a24 0%,#d85120 100%);
+	background: -ms-linear-gradient(top, #f15a24 0%,#d85120 100%);
+	background: linear-gradient(to bottom, #f15a24 0%,#d85120 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f15a24', endColorstr='#d85120',GradientType=0 );
+}
+	
+.header .margin {width: 1000px; margin: 0 auto; padding: 0 20px; overflow: hidden; }
 
-.tagline {float: left; color: #807E7A; font-size: 21px; margin: 10px 0; padding-top: 15px; font-family:'AmericanTypwrterITCW01- 731031';}
+.tagline {display: none; }
 
-.languages {float: right; margin: 14px 0 0 0; padding: 0; list-style: none;}
-.languages li {display: block; float: left; padding: .5em 1em;  border-radius: .5em; }
-.languages .selected { background: #F0EDE5; box-shadow: inset 0 1px 7px rgba(0,0,0,0.1); }
-.languages .selected a { color: #807E7A; }
+.languages {float: right; margin: .5em 0 0 0; padding: 0; list-style: none;}
+.languages li {display: block; float: left; padding: .5em .75em .5em 1.25em; }
+.languages a {color: rgba(240,237,229,.6)}
+.languages a:hover {color: #fff;}
+.languages .selected a { color: rgba(240,237,229,1); }
 
-.subnav {margin-bottom: 1em; overflow: hidden;}
+.subnav { background: #f7f6f2; overflow: hidden; box-shadow: 0 1px 7px rgba(0,0,0,0.1); border-top: 1px solid rgba(0,0,0,0.1);}
+.subnav .margin {width: 1000px; margin: 0 auto; padding: 0 20px 0 20px; }
 
-.social {margin: 0; padding: 0; list-style: none; float: right; margin: .75em 0 0 .5em; }
-.social li {display: block; float: left; border-radius: 20px; margin: 0 0 0 .25em;
+.social {margin: 0; padding: 0; list-style: none; float: right; }
+.social li {display: block; float: left; margin: 0 ;
 	-webkit-transition: background 0.2s ease;
 	-moz-transition: background 0.2s ease;
 	-o-transition: background 0.2s ease;
@@ -56,35 +68,30 @@ h2 span {font-size: 28px; display: block;}
 	}
 .social li:hover {background: #fff; }
 
-.social li a {display: block; width: 40px; height: 40px}
+.social li a {display: block; width: 40px; height: 40px; padding: .25em;}
 .social li span {display: none;}
 .social .tinyletter a {background: url(images/tinyletter.png) no-repeat center; background-size: 21px 26px;}
-.social .facebook a {background: url(images/facebook.svg);}
-.social .twitter a {background: url(images/twitter.svg);}
-.social .pinterest a {background: url(images/pinterest.svg);}
-.social .rss a {background: url(images/rss.svg);}
+.social .facebook a {background: url(images/facebook.svg) no-repeat center;}
+.social .twitter a {background: url(images/twitter.svg) no-repeat center;}
+.social .pinterest a {background: url(images/pinterest.svg) no-repeat center;}
+.social .rss a {background: url(images/rss.svg) no-repeat center;}
 
 .legacy .social .tinyletter a {background: url(images/tinyletter-legacy.png) no-repeat center; background-size: 21px 26px;}
-.legacy .social .facebook a {background: url(images/facebook.png);}
-.legacy .social .twitter a {background: url(images/twitter.png);}
-.legacy .social .pinterest a {background: url(images/pinterest.png);}
-.legacy .social .rss a {background: url(images/rss.png);}
+.legacy .social .facebook a {background: url(images/facebook.png) no-repeat center;}
+.legacy .social .twitter a {background: url(images/twitter.png) no-repeat center;}
+.legacy .social .pinterest a {background: url(images/pinterest.png) no-repeat center;}
+.legacy .social .rss a {background: url(images/rss.png) no-repeat center;}
 
 .menu-navigation-container {}
-.menu-navigation-container ul {margin: .75em 0 0 0; padding: 0 .5em 0 0 ; list-style: none; float: right; border-right: 1px solid #fff; }
-.menu-navigation-container ul li { margin: 0; padding: 0; }
-.menu-navigation-container ul li a { display: block; float: left; border-radius: 20px; margin: 0 0 0 .25em; padding: 9px 1em;
-	-webkit-transition: background 0.2s ease;
-	-moz-transition: background 0.2s ease;
-	-o-transition: background 0.2s ease;
-	transition: background 0.2s ease;
-	}
-.menu-navigation-container ul li a:hover {background: #fff; }
+.menu-navigation-container ul {margin: 0 0 0 0; padding: 0 0 0 0; list-style: none; float: left; }
+.menu-navigation-container ul li { margin: 0; padding: 0; float: left;}
+.menu-navigation-container ul li a { display: block; float: left; margin: 0 .25em 0 0 ; padding: 13px 1.25em 13px .25em; font-weight: bold;}
 
-	
+
 /* Content */
 
-.content .margin {width: 1000px; margin: 0 auto; padding: 0 20px 0 20px}
+.content {border-top: 1px solid rgba(0,0,0,0.1);}
+.content .margin {width: 1000px; margin: 2em auto 0 auto; padding: 0 20px 0 20px}
 
 
 .itemwrapper:before, .itemwrapper:after { content:""; display:table; clear:both; }
