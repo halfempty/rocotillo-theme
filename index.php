@@ -1,52 +1,40 @@
-<?php get_header(); ?>
-	
-		<?php if (have_posts()) : ?>
+<?php 
 
-			<?php while (have_posts()) : the_post(); ?>
+get_header(); 
+
+  wp_reset_postdata();
+
+
+  $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+
+  $args = array(
+	'posts_per_page' => 5,
+	'paged' => $paged
+  );
+
+  $list_of_posts = new WP_Query( $args ); 
+
+?>
+
+			<div class="slideshow"><div class="slideinner">
+			<?php  while ( $list_of_posts->have_posts() ): $list_of_posts->the_post(); ?>
 				<?php $rocotillo = get_post_meta($post->ID,'_rocotillo',TRUE); ?>
-					<div class="itemwrapper">
-						<?php if ( $rocotillo['format'] == 'quick') : ?>
-							<div class="quickitem">
-								<div class="thumbbox">
-
-									<a href="<?php the_permalink(); ?>"><img src="<?php echo $rocotillo['thumbnail']; ?>" alt="" /></a>
-								</div>
-
-								<div class="textbox">
-									<h6><?php echo get_template_part('parts/lang/quickbite'); ?></h6>
-									<h2><a href="<?php the_permalink(); ?>"><?php echo $rocotillo['headline']; ?></a></h2> 
-
-								<div class="meta">
-									<p><?php echo $rocotillo['byline']; ?></p>
-									<p class="last"><?php echo $rocotillo['publishline']; ?></p>
-								</div>
-								</div>
-
-							</div>
-				
-						<?php else: ?>
-							<div class="listingitem">
-								<div class="thumbbox"><a href="<?php the_permalink(); ?>"><img src="<?php echo $rocotillo['thumbnail']; ?>" alt="" /></a></div>
-
-								<div class="textbox">
-								<h2><a href="<?php the_permalink(); ?>"><?php echo $rocotillo['headline']; ?></a> <span><?php echo $rocotillo['subhead']; ?></span></h2> 
-
-								<div class="meta">
-									<p><?php echo $rocotillo['byline']; ?></p>
-									<p class="last"><?php echo $rocotillo['publishline']; ?></p>
-								</div>
-								</div>
-
-							</div>
-					
-						<?php endif; ?>
-
-					</div>
-
+				<a class="slideimage" style="display: none;" href="<?php the_permalink(); ?>">
+					<img src="<?php echo $rocotillo['thumbnail']; ?>" alt="" />
+				</a>					
 			<?php endwhile; ?>
 
-		<?php else : ?>
-			<p>Page not found.</p>
-		<?php endif; ?>
+			<?php rewind_posts(); ?>
 
+			<div class="slidestage">
+			<?php  while ( $list_of_posts->have_posts() ): $list_of_posts->the_post(); ?>
+				<?php $rocotillo = get_post_meta($post->ID,'_rocotillo',TRUE); ?>
+				<div class="slidetext" style="display: none;">
+					<h2><a href="<?php the_permalink(); ?>"><?php echo $rocotillo['headline']; ?></a> <span><?php echo $rocotillo['subhead']; ?></span></h2> 
+					<p><?php echo $rocotillo['byline']; ?></p>
+				</div>
+			<?php endwhile; ?>
+			</div>
+
+			</div></div>
 <?php get_footer(); ?>
