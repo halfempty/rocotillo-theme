@@ -1,7 +1,7 @@
 <?php 
 
 /*
-Template Name Posts: Rocotillo Fields
+Template Name Posts: Simple Template
 */
 
 get_header(); ?>
