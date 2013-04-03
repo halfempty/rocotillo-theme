@@ -4,15 +4,11 @@ Version: International
 */
 
 /*
-font-family:'AmericanTypwrterITCW01- 731010'; font-weight: normal; 	Bold
-font-family:'AmericanTypwrterITCW01- 731013';	Bold Italic
-font-family:'AmericanTypwrterITCW01- 731016';	Condensed Bold
-font-family:'AmericanTypwrterITCW01- 731019';	Condensed Light
-font-family:'AmericanTypwrterITCW01- 731022';	Condensed
-font-family:'AmericanTypwrterITCW01- 731025';	Light
-font-family:'AmericanTypwrterITCW01- 731028';	Light Italic
-font-family:'AmericanTypwrterITCW01- 731031';	Medium
-font-family:'AmericanTypwrterITCW01- 731034';	Medium Italic
+
+font-family:'AmericanTypwrterITCW02- 737097'; Medium
+font-family:'AmericanTypwrterITCW01- 731034'; Medium Italic
+font-family:'AmericanTypwrterITCW01- 731010'; Bold
+font-family:'AmericanTypwrterITCW01- 731013'; Bold Italic
 
 */
 
@@ -31,7 +27,7 @@ h1 {margin: .25em; float: left; font-size:24px; background: url(images/rocotillo
 .legacy h1 {background: url(images/rocotillo-light.png) no-repeat right center;}
 h1 a {color: #F0EDE5;}
 h1 a:hover {color: #fff; }
-h2 {margin: 0; font-size: 42px; color: rgba(0,0,0,0.5); line-height: 1.3; font-weight: normal; font-family:'AmericanTypwrterITCW01- 731031'; clear: both}
+h2 {margin: 0; font-size: 42px; color: rgba(0,0,0,0.5); line-height: 1.1; font-weight: normal; font-family:'AmericanTypwrterITCW02- 737097'; clear: both}
 h2 span {font-size: 36px; display: block;}
 
 /* Header */
@@ -124,7 +120,7 @@ h2 span {font-size: 36px; display: block;}
 .imagebox:before, .imagebox:after { content:""; display:table; clear:both; }
 .imagebox .image { background: #fff; padding: 15px; box-shadow: 0 1px 7px rgba(0,0,0,0.2); float: left; }
 .imagebox .image img {background: #F0EDE5; width: 770px; }
-.imagebox .caption {width: 170px; float: right; font-size: 18px; color: #807E7A; font-family:'AmericanTypwrterITCW01- 731031';}
+.imagebox .caption {width: 170px; float: right; font-size: 18px; color: #807E7A; font-family:'AmericanTypwrterITCW02- 737097';}
 .imagebox .caption.long {font-size: 14px;}
 .imagebox .caption span { display: block; }
 .imagebox .caption a { display: block !important; margin-top: .5em !important;}
@@ -146,14 +142,12 @@ h2 span {font-size: 36px; display: block;}
 .slideshow {  height: 647px; background: #f7f6f2; border: 15px solid #fff; box-shadow: 0 1px 7px rgba(0,0,0,0.2); overflow: hidden; margin: 1em 0; zoom:1; /* For IE 6/7 (trigger hasLayout) */ }
 .slideinner {position: relative;}
 
-/* .slide:before, .imagebox:after { content:""; display:table; clear:both; } */
 
 .slideimage {line-height: 0; position: absolute; top: 0; width: 970px; }
 .slideimage img {background: #F0EDE5; width: 970px; }
 
  .slidestage { position: absolute; top: 20px; left: 20px; width: 930px; height: 194px; border-radius: .5em; box-shadow: 0 1px 7px rgba(0,0,0,0.2); background: rgba(240,237,229,0.8); } 
 
-/* .slidestage { position: absolute; top: 0px; left: 0px; width: 980px; height: 194px; background: rgba(240,237,229,0.8); }*/
 
 .slidetext {position: absolute; top: 0; padding: 25px 35px 15px 35px; }
 .slidetext p {margin: 1em 0;}
@@ -171,7 +165,7 @@ h2 span {font-size: 36px; display: block;}
 
 /* Single */
 
-.quote {background: url(images/ldquo.svg) no-repeat left 6px; clear: both; font-size: 36px; width: 800px; color: #807E7A; line-height: 1.2; margin: .5em 0 .6em 0; overflow: hidden; font-family:'AmericanTypwrterITCW01- 731031';}
+.quote {background: url(images/ldquo.svg) no-repeat left 6px; clear: both; font-size: 36px; width: 800px; color: #807E7A; line-height: 1.2; margin: .5em 0 .6em 0; overflow: hidden; font-family:'AmericanTypwrterITCW02- 737097';}
 .legacy .quote {background: url(images/ldquo.png) no-repeat left 6px; }
 .quote p {margin: 0 0 0 35px; padding-bottom: .5em; border-bottom: 1px dotted #F15A24;}	
 .quote .rdquo {background: url(images/rdquo.svg) no-repeat right bottom; padding-right: 35px; }
@@ -181,19 +175,66 @@ h2 span {font-size: 36px; display: block;}
 .copy a {font-weight: 500;}
 
 .recipe {background: #fff; padding: 1.5em 30px 1em 30px; box-shadow: 0 1px 7px rgba(0,0,0,0.2); border-radius: 18px; overflow: hidden; margin: 2em 0 2em 170px; width: 600px;}
-.recipe h3 {font-weight: normal; color: #F15A24; font-size: 36px; margin: 0;font-family:'AmericanTypwrterITCW01- 731031';}
+.recipe h3 {font-weight: normal; color: #F15A24; font-size: 36px; margin: 0;font-family:'AmericanTypwrterITCW02- 737097';}
 .recipe ul {margin-left: 0; padding-left: 0; list-style: none; }
-	
-.authorbox { border-top: 1px dotted #F15A24; margin-top: 2em; clear: both;}
-.single .authorbox {  width: 600px; margin-left: 200px;  overflow: hidden;}
-.contributors .authorbox {  width: 800px; }
 
-.authorbox strong { font-family:'AmericanTypwrterITCW01- 731010'; font-weight: normal; font-weight: normal;}
-.authorbox img {float: left; margin: 1em 1em 1em 0; width: 100px;}
-.authorbox a.credit {display:block; font-size: .7em; font-family:'AmericanTypwrterITCW01- 731031'; margin-bottom: 1em;}
+/* Simple */
+
+.columntitle { display: block; line-height: 1.1; font-weight: normal; font-family:'AmericanTypwrterITCW02- 737097'; padding: 1em 1.5em; margin-bottom: 2em; background: rgba(0,0,0,0.1); box-shadow: inset 0 1px 7px rgba(0,0,0,0.2); border-radius: 4px;}
+.columntitle a {color: #666; font-size: 28px;}
+.columntitle span {color: #666; font-size: 18px; display: block; padding-top: .5em}
+
+.simple {width: 600px; float: left;}
+.postdate {margin-bottom: 3em;}
+	
+.simplesidebar {width: 370px; float: right;}
+
+.simplesidebar h2 {
+	border: 5px solid #fff;
+box-shadow: 0 1px 7px rgba(0,0,0,0.2); 
+	text-align: center; padding: .25em;
+
+	background: #f15a24;
+	background: -moz-linear-gradient(top, #f15a24 0%, #d85120 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f15a24), color-stop(100%,#d85120));
+	background: -webkit-linear-gradient(top, #f15a24 0%,#d85120 100%);
+	background: -o-linear-gradient(top, #f15a24 0%,#d85120 100%);
+	background: -ms-linear-gradient(top, #f15a24 0%,#d85120 100%);
+	background: linear-gradient(to bottom, #f15a24 0%,#d85120 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f15a24', endColorstr='#d85120',GradientType=0 );
+	
+}
+
+.simplesidebar h2 a { color: #F0EDE5; font-size: 24px; display: block;}
+
+.simplesidebar h3 {font-family:'AmericanTypwrterITCW01- 731010'; font-weight: normal;color: rgba(0,0,0,0.5); padding-top: 1em; border-top: 1px dotted #F15A24; }
+
+
+.simple .image { background: #fff; padding: 15px; box-shadow: 0 1px 7px rgba(0,0,0,0.2); display: inline-block;}
+.simple .image img {background: #F0EDE5; max-width: 568px; border: 1px solid #F0EDE5; }
+
+#disqus_thread {margin-top: 3em;}
+
+/**/	
+	
+.authorbox { }
+
+.single .authorbox {  width: 600px; margin-left: 200px;  overflow: hidden; border-top: 1px dotted #F15A24; margin-top: 2em; clear: both;}
+.single .authorbox img {float: left; margin: 1em 1em 1em 0; width: 100px;}
+
+.contributors .authorbox {  width: 800px; border-top: 1px dotted #F15A24; margin-top: 2em; clear: both; }
+.contributors .authorbox img {float: left; margin: 1em 1em 1em 0; width: 100px;}
+
+.simplesidebar .authorbox { }
+.simplesidebar .authorbox img { margin: 0; width: 150px;}
+
+
+.authorbox strong { font-family:'AmericanTypwrterITCW01- 731010'; font-weight: normal;}
+.authorbox a.credit {display:block; font-size: .7em; font-family:'AmericanTypwrterITCW02- 737097'; margin-bottom: 1em;}
 .authorbox + .authorbox {margin-top: 0;}
 		
-.twitterbox {border: 1px solid #F1B6A1; border-radius: 6px; width: 600px; margin: 1em 0 2em 200px; box-shadow: 0 1px 5px rgba(0,0,0,0.1); color: #C4491D;
+
+.twitterbox {clear: both; border: 1px solid #F1B6A1; border-radius: 6px; box-shadow: 0 1px 5px rgba(0,0,0,0.1); color: #C4491D;
 	background: #f1edec;
 	background: -moz-linear-gradient(top, #f1edec 0%, #f1d7cd 100%);
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f1edec), color-stop(100%,#f1d7cd));
@@ -203,22 +244,31 @@ h2 span {font-size: 36px; display: block;}
 	background: linear-gradient(to bottom, #f1edec 0%,#f1d7cd 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1edec', endColorstr='#f1d7cd',GradientType=0 );
 	}
-.twitterbox h4 {font-weight: normal; border-bottom: 1px solid #F1B6A1; padding: 12px 16px; margin: 0; font-size: 16px; background: url(images/twitterbox.svg) no-repeat 560px center;}
-.legacy .twitterbox h4 {background: url(images/twitterbox.png) no-repeat 560px center;}
 .twitterbox a { color: #C4491D;}
 .twitterbox a:hover {color: #F15A24;}
 .twitterbox p { padding: 12px 16px; margin:0; font-size: 14px;}
+.twitterbox h4 {font-weight: normal; border-bottom: 1px solid #F1B6A1; padding: 12px 16px; margin: 0; font-size: 16px; }
+
+.single .twitterbox {width: 600px;  margin: 1em 0 2em 200px;}
+.single .twitterbox h4 { background: url(images/twitterbox.svg) no-repeat 560px center;}
+.legacy .single .twitterbox h4 {background: url(images/twitterbox.png) no-repeat 560px center;}
+
+.simplesidebar .twitterbox {  margin: 2em 0; }
+.simplesidebar .twitterbox h4 { background: url(images/twitterbox.svg) no-repeat 330px center;}
+.legacy .simplesidebar .twitterbox h4 {background: url(images/twitterbox.png) no-repeat 330px center;}
+
+
 
 /* Contributors*/
 
 .contributors ul.contributions { margin-left: 5em; list-style: none;}
-.contributors ul.contributions li { margin: 0 0 1em 0; font-size: 24px; color: rgba(0,0,0,0.5); line-height: 1.3; font-weight: normal; font-family:'AmericanTypwrterITCW01- 731031'; }
+.contributors ul.contributions li { margin: 0 0 1em 0; font-size: 24px; color: rgba(0,0,0,0.5); line-height: 1.3; font-weight: normal; font-family:'AmericanTypwrterITCW02- 737097'; }
 .contributors ul.contributions li span {font-size: 21px; display: block;}
 
 
 /* Footer */
 
-.footer {text-align: center; padding: 5em 0 2em 0; color: rgba(0,0,0,0.5); font-size: 18px; font-family:'AmericanTypwrterITCW01- 731031'; clear: both;}
+.footer {text-align: center; padding: 5em 0 2em 0; color: rgba(0,0,0,0.5); font-size: 18px; font-family:'AmericanTypwrterITCW02- 737097'; clear: both;}
 .footer .logo {margin: 0; font-size:24px; background: url(images/rocotillo.svg) no-repeat right center; padding: 12px 1.5em 0 0; display: inline-block; font-family:'AmericanTypwrterITCW01- 731010'; font-weight: normal;}
 .legacy .footer .logo {background: url(images/rocotillo.png) no-repeat right center; }
 .footer .mediatemple {font-size: .7em; margin: 4em 0 0 0;}

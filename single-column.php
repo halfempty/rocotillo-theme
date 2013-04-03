@@ -11,19 +11,38 @@ get_header(); ?>
 
 				<?php $rocotillo = get_post_meta($post->ID,'_rocotillo',TRUE); ?>
 
-				<div class="single">
 
-				<h2><a href="<?php the_permalink(); ?>"><?php echo $rocotillo['headline']; ?></a> <span><?php echo $rocotillo['subhead']; ?></span></h2> 
-
-				<div class="meta">
-					<p><?php echo $rocotillo['byline']; ?></p>
-					<p class="last"><?php echo $rocotillo['publishline']; ?></p>
+				<div class="columntitle">
+					<a href="">The Title of Krystal&rsquo;s Column</a>
 				</div>
+
+				<div class="simple">
+
+				<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2> 
+
+				<p class="postdate">By <strong>Krystal Halfmann Mullins</strong>. Posted <?php the_date(); ?>.</p>
 
 				<?php the_content(); ?>
 
-				<?php get_template_part('parts/twitterbox') ?>
+				<?php comments_template(); ?>
 
+
+				</div>
+
+				<div class="simplesidebar">
+
+					<?php get_template_part('parts/krystal'); ?>
+
+					<h3>My Links</h3>
+
+					<ul>
+						<li><a href="">My blog, Home Made Austin</a></li>
+						<li><a href="">Home Made Austin on Twitter</a></li>
+						<li><a href="">Home Made Austin on Pinterest</a></li>
+						<li><a href="">Home Made Austin on Facebook</a></li>
+					</ul>
+
+					<?php get_template_part('parts/twitterbox') ?>
 				</div>
 
 			<?php endwhile; ?>

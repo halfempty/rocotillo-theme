@@ -20,8 +20,8 @@
 
 	<link rel="shortcut icon" href="<?php bloginfo('template_directory'); ?>/images/favicon.png" />
 
-	<script type="text/javascript" src="http://fast.fonts.com/jsapi/51b11d53-b76f-4c9e-9f60-de07bb972cf4.js"></script>	
-	
+	<script type="text/javascript" src="http://fast.fonts.com/jsapi/7863d873-65fb-417b-9d5f-19503116ca94.js"></script>	
+
 	<?php wp_head(); ?>
 	
 </head>
@@ -34,25 +34,29 @@
 		<h1><a href="<?php echo home_url(); ?>">Rocotillo</a></h2>
 		<p class="tagline"><?php echo get_bloginfo('description'); ?></p>
 
-		<ul class="languages">
-		<?php
-			global $wp_query;
-			$postid = $wp_query->post->ID;
-			$rocotillohead = get_post_meta($postid,'_rocotillo',TRUE);
-		?>
-		<?php if ( $rocotillo['english'] !== '' && !is_home() ) : ?>
-			<li class="<?php echo get_template_part('parts/lang/english-class'); ?>"><a href="<?php echo $rocotillohead['english']; ?>">english</a></li>
-		<?php else: ?>
-			<li class="<?php echo get_template_part('parts/lang/english-class'); ?>"><a href="http://blog.rocotillo.com/en/">english</a></li>
-		<?php endif; ?>
+		<?php if ( !in_category('krystals-column') ) : ?>
 
-		<?php if ( $rocotillo['spanish'] !== '' && !is_home() ) : ?>
-			<li class="<?php echo get_template_part('parts/lang/spanish-class'); ?>"><a href="<?php echo $rocotillohead['spanish']; ?>">español</a></li>
-		<?php else: ?>
-			<li class="<?php echo get_template_part('parts/lang/spanish-class'); ?>"><a href="http://blog.rocotillo.com/es/">español</a></li>
-		<?php endif; ?>
+			<ul class="languages">
+			<?php
+				global $wp_query;
+				$postid = $wp_query->post->ID;
+				$rocotillohead = get_post_meta($postid,'_rocotillo',TRUE);
+			?>
+
+			<?php if ( $rocotillo['english'] !== '' && !is_home() ) : ?>
+				<li class="<?php echo get_template_part('parts/lang/english-class'); ?>"><a href="<?php echo $rocotillohead['english']; ?>">english</a></li>
+			<?php else: ?>
+				<li class="<?php echo get_template_part('parts/lang/english-class'); ?>"><a href="http://blog.rocotillo.com/en/">english</a></li>
+			<?php endif; ?>
+
+			<?php if ( $rocotillo['spanish'] !== '' && !is_home() ) : ?>
+				<li class="<?php echo get_template_part('parts/lang/spanish-class'); ?>"><a href="<?php echo $rocotillohead['spanish']; ?>">español</a></li>
+			<?php else: ?>
+				<li class="<?php echo get_template_part('parts/lang/spanish-class'); ?>"><a href="http://blog.rocotillo.com/es/">español</a></li>
+			<?php endif; ?>
 	
-		</ul>
+			</ul>
+		<?php endif; ?>
 
 	</div>
 </div>

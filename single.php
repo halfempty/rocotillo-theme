@@ -14,6 +14,8 @@
 					<p class="last"><?php echo $rocotillo['publishline']; ?></p>
 				</div>
 
+				<?php remove_filter ('the_content', 'wpautop'); ?>
+
 				<?php the_content(); ?>
 
 				<?php get_template_part('parts/twitterbox') ?>
